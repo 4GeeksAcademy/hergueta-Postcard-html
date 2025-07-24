@@ -1,0 +1,112 @@
+/* Reset de la pagina*/
+*{
+   padding: 0;
+   margin: 0;
+   box-sizing: border-box;
+}
+
+/* Variables */
+:root{
+   --fuenteCursiva: "Handlee", cursive;
+}
+
+
+
+.contenedor-principal{
+   width: 100vw;
+   height: 100vh;
+   position: relative;
+   background-color: #0E0E0E;
+}
+
+.contenedor-secundario{
+   width: 1000px;
+   height: 800px;
+   background-color: #171717;
+   position: absolute;
+   top: 50%;
+   left: calc(50% - 500px);
+   transform: translate(0%, -50%);
+   display: flex;
+   align-items: center;
+   justify-content: center;
+}
+
+.contenedor{
+   width: 60%;
+   display: flex;
+   flex-direction: column;
+   background-color: white;
+   padding: 15px;
+}
+
+.encabezado{
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+}
+
+.encabezado img{
+   display: block;
+   width: 70px;
+}
+
+.encabezado h1{
+   font-family: var(--fuenteCursiva);
+}
+
+.cuerpo{
+   padding-top: 20px 0 20px 0 ;
+   display: flex;
+   justify-content: space-evenly;
+   flex-direction: row;
+}
+
+.main{
+   width: 50%;
+}
+
+.main p{
+   padding: 15px 15px 15px 0 ;
+   font-family: var(--fuenteCursiva);
+   font-size: 20px;
+}
+
+.lateral{
+   width: 50%;
+   position: relative;
+}
+
+.lateral form{
+   position: absolute;
+   top: 0;
+   padding: 0px 0px 0px 10px;
+   width: 100%;
+   
+}
+
+.lateral form input[type="text"]{
+   width: 100%;
+   padding: 10px 0px 0px 0px;
+   font-family: var(--fuenteCursiva);
+   font-size: 20px;
+   border: none;
+   border-bottom: 1px solid grey;
+}
+
+.piePagina{
+   padding: 30px;
+   width: 100%;
+   display: flex;
+   justify-content: center;
+}
+
+.piePagina button{
+   width: 35%;
+   font-family: var(--fuenteCursiva);
+   font-size: 18px;
+   padding: 6px 0px 3px 0px;
+   border: none;
+   border-bottom: 1px solid grey;
+   cursor: pointer;
+}
